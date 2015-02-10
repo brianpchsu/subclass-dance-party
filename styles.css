@@ -35,3 +35,8 @@ body, a:link, a:visited, a:active{
   border-radius:10px;
   position:absolute;
 }
+#slow{
+  -webkit-animation-duration: 10s;
+  -webkit-animation-delay: 0s;
+  -webkit-animation-iteration-count: infinite;
+}

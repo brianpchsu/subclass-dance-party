@@ -31,5 +31,14 @@ $(document).ready(function(){
     window.dancers.push(dancer);
     $('body').append(dancer.$node);
   });
+
+  $(".lineUp").on("click", function(event) {
+    var top, left;
+    for(var i = 0; i < window.dancers.length; i++){
+      top = 100;
+      left = 10+i*30;
+      window.dancers[i].lineUp(top, left);
+    }
+  });
 });
 

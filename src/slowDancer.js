@@ -1,5 +1,7 @@
 var SlowDancer = function(top, left, timeBetweenSteps){
-   this.$node = $('<span class="slowdancer"></span>');
+  this.top = top;
+  this.left = left;
+  this.$node = $('<div id=slow class="slowdancer"></div>');
   Dancer.apply(this, arguments);
 };
 
@@ -12,5 +14,6 @@ SlowDancer.prototype.step = function(){
     // toggle() is a jQuery method to show/hide the <span> tag.
     // See http://api.jquery.com/category/effects/ for this and
     // other effects you can use on a jQuery-wrapped html tag.
-    this.$node.toggle();
+    this.$node.addClass('animated shake');
 };
+
