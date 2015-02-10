@@ -25,3 +25,13 @@ body, a:link, a:visited, a:active{
   border-radius:10px;
   position:absolute;
 }
+.crazydancer{
+  border:10px solid #FFD700;
+  border-radius:10px;
+  position:absolute;
+}
+.slowdancer{
+  border:10px solid green;
+  border-radius:10px;
+  position:absolute;
+}
