@@ -3,16 +3,23 @@ body, html{
 }
 body{
   margin: 0px;
-  background-color:#444;
+  background-image:url("lib/res/bg.png");
+  background-size:100% 100%;
+  background-repeat: no-repeat;
   font-size: 18px;
 }
 body, a:link, a:visited, a:active{
   color: lightblue;
 }
-.title, .addDancerButton{
+.title, .addDancerButton, .addFlyingDancerButton{
   padding:5px 12px;
   float:right;
 }
+.lineUp, .goBack{
+  padding:5px 12px;
+  float:left;
+}
+
 .topbar{
   height:32px;
   background-color: #555;
@@ -21,22 +28,35 @@ body, a:link, a:visited, a:active{
   background-color: #777;
 }
 .dancer{
-  border:10px solid red;
-  border-radius:10px;
+  width: 50px;
+  height: 50px;
   position:absolute;
 }
-.crazydancer{
-  border:10px solid #FFD700;
-  border-radius:10px;
+.lakituDancer{
+  width: 30px;
+  height: 50px;
   position:absolute;
 }
-.slowdancer{
-  border:10px solid green;
-  border-radius:10px;
-  position:absolute;
-}
-#slow{
+
+#mario{
   -webkit-animation-duration: 10s;
   -webkit-animation-delay: 0s;
   -webkit-animation-iteration-count: infinite;
+}
+#luigi{
+}
+#peach{
+  -webkit-animation-duration: 5s;
+  -webkit-animation-delay: 0s;
+  -webkit-animation-iteration-count: infinite;
+}
+.yoshi{
+  content: url("lib/res/marioClick.gif");
+}
+.secret{
+  background-color: #555;
+  opacity: 0.0;
+  width: 30px;
+  height: 30px;
+  position: absolute;
 }
